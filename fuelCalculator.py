@@ -1,8 +1,10 @@
 from flask import Flask, request
 import requests
 import http.client
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 conn = http.client.HTTPSConnection("api.collectapi.com")
 API_KEY = 'apikey 3h9po15E9byeafHcWWE2R3:07cqWNIyDDkVHVKSvMJcyK'
 
